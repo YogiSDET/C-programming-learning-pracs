@@ -9,6 +9,6 @@ int main(){
     // Declaring variables to store error codes
     int error_code;
     // 'J' --> a character
-    printf("Hello I am learning C with Harry");
+    printf("Hello I am learning C with yogi");
     return 0;
 }
