@@ -1,0 +1,44 @@
+/* #include<stdio.h>
+
+int main(){
+    int a,b,c,d;
+    printf("enter a no \n");
+    scanf("%d", &a);
+    printf("enter b no \n");
+    scanf("%d", &b);
+    printf("enter c no \n");
+    scanf("%d", &c);
+    printf("enter d no \n");
+    scanf("%d", &d);
+    if(a>b && a>c && a>d){
+        printf("a is greater");
+    }
+    else if(b>a && b>c && b>d){
+        printf("b is greater");
+    }
+    else if(c>b && c>a && c>d){
+        printf("c is greater");
+    }
+    else if(d>a && d>c && d>b){
+        printf("d is greater");
+    }
+    return 0;
+} */
+
+#include<stdio.h>
+
+int main(){
+   for(int i = 5;i;i--){
+       printf("value of i %d\n",i-1);
+   }
+    return 0;
+}
+
+
+ /* int a = 1;
+    do
+    {
+    printf("first nth natural no is %d \n",a);
+    a++;
+    } while (a<=5);
+     */
