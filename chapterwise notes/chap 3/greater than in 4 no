@@ -1,0 +1,41 @@
+#include<stdio.h>
+//array[i] will have value of array linewise
+// logic building in this code is like this way
+// big=small=arr[0] will have 11,23,33,433
+// where as array[i] will have 23,33,433 
+// 23>11,33>23,433>33 at last we will get 433 big same is applied to small one lesser than sign is used
+
+int main (void){
+    int array[] = {11,23,33,433};
+    int length = sizeof array / sizeof array[0];
+    printf("length %d\n", length);
+    int big, small;
+
+    big=small=array[0];
+    for (int i = 0; i < length; i++){
+        if(array[i]>big){
+            printf("array %d %d\n",array[i],big);
+            big=array[i];
+        }
+
+        if(array[i]<small){
+            small=array[i];
+        }
+    }
+
+    printf("The biggest Number is:\t %d\n",big);
+    printf("The smallest Number is:\t %d\n",small);
+
+    return 0;
+}
+
+// size of operator in c
+/* #include <stdio.h>
+int main()
+{
+    printf("%lu\n", sizeof(char));
+    printf("%lu\n", sizeof(int));
+    printf("%lu\n", sizeof(float));
+    printf("%lu", sizeof(double));
+    return 0;
+} */
